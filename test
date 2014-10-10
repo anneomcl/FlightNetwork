@@ -1,0 +1,12 @@
+            if query == '3':
+                new_city = input("Type code of new city ")
+                new_name = input("Type name of new city ")
+                new_country = input("Type country of new city ")
+                """ entry = {'metros' : {'code' : new_city, 'name' : new_name, 'country' : new_country}}
+                with open('map_data.json') as f:
+                    data = json.load(f)
+                data.update(entry)
+                with open('map_data.json','w') as f:
+                    json.dump(data, f)
+                self.clear_graph()
+                self.__init__('map_data.json')

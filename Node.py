@@ -1,19 +1,12 @@
 class Node:
-    code = ""
-    name = ""
-    country = ""
-    continent = ""
-    timezone = -1
-    coords = ()
-    latitude = -1
-    longitude = -1
-    population = -1
-    region = -1
 
     #initializes Node based on JSON data
     #param metro - JSON city data
     #param edges - edges associated with Graph
     def __init__(self, metro, edges):
+        self.previous = None
+        self.visited = False
+        self.distance = 0
         self.code = metro['code']
         self.name = metro['name']
         self.country = metro['country']
