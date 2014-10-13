@@ -1,0 +1,1489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="pics-label" content='(pics-1.1
+   "http://www.icra.org/ratingsv02.html" comment "basic online form"
+   l gen true for "http://www.gcmap.com/" r (nz 1 vz 1 lz 1 oz 1 cz 1)
+   "http://www.rsac.org/ratingsv01.html"
+   l gen true for "http://www.gcmap.com/" r (n 0 s 0 v 0 l 0))'>
+<link rel="icon" href="/icon-48.png" sizes="48x48" type="image/png">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link href="/mapui.css" rel="stylesheet" type="text/css">
+<script src="/js/frames.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<script src="/js/mapui.js" type="text/javascript"></script>
+<script src="/js/glue.js" type="text/javascript"></script>
+<style type="text/css">
+.knob-img { display: none; }
+.sect-hide, .item-hide { display: block; }
+.sect-show { margin-left: 0; }
+div.mr { margin-left: -1px; }
+</style>
+<meta name="description" content="A map from the Great Circle Mapper.">
+<meta name="robots" content="index,follow">
+<title>Great Circle Mapper</title>
+</head>
+<body onload="nuke_frame();">
+<div id="wrapper">
+<div id="top">
+<div class="top-advert"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- gc2-mapui-leader -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4595747994911043"
+     data-ad-slot="4982029829"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<map name="logo_map">
+<area href="/" shape="circle" coords="60,60,60" alt="home">
+</map>
+<table cellspacing=0 cellpadding=5 border=0>
+<tr valign=top>
+<td rowspan=2 valign=middle><img src="/images/logo-dash.gif" alt="Great Circle Mapper logo" width=120 height=120 border=0 usemap="#logo_map"></td>
+<td colspan=2><div class="top-title">Great Circle Mapper</div></td>
+</tr>
+<tr valign=top>
+<td><form name="dash" action="/cgi-bin/gc2q" method="GET" class="top"><table cellspacing=0 cellpadding=5 border=0>
+<tr>
+<td colspan=4><input type="text" name="Q" value="SCL-LIM, LIM-MEX, LIM-BOG, MEX-LAX, MEX-CHI, MEX-MIA, MEX-BOG, BOG-MIA, BOG-SAO, BOG-BUE, BUE-SAO, SAO-MAD, SAO-LOS, LOS-KRT, LOS-FIH, FIH-KRT, FIH-JNB, JNB-KRT, KRT-CAI, CAI-ALG, CAI-IST, CAI-BGW, CAI-RUH, ALG-MAD, ALG-PAR, ALG-IST, MAD-NYC, MAD-LON, MAD-PAR, LON-NYC, LON-ESS, LON-PAR, PAR-ESS, PAR-MIL, MIL-ESS, MIL-IST, ESS-LED, LED-MOW, LED-IST, MOW-THR, MOW-IST, IST-BGW, BGW-THR, BGW-KHI, BGW-RUH, THR-DEL, THR-KHI, THR-RUH, RUH-KHI, KHI-DEL, KHI-BOM, DEL-CCU, DEL-MAA, DEL-BOM, BOM-MAA, MAA-CCU, MAA-BKK, MAA-JKT, CCU-HKG, CCU-BKK, BKK-HKG, BKK-SGN, BKK-JKT, HKG-SHA, HKG-TPE, HKG-MNL, HKG-SGN, SHA-PEK, SHA-ICN, SHA-TYO, SHA-TPE, PEK-ICN, ICN-TYO, TYO-SFO, TYO-OSA, OSA-TPE, TPE-MNL, MNL-SFO, MNL-SYD, MNL-SGN, SGN-JKT, JKT-SYD, SYD-LAX, LAX-SFO, LAX-CHI, SFO-CHI, CHI-YYZ, CHI-ATL, ATL-WAS, ATL-MIA, MIA-WAS, WAS-YYZ, WAS-NYC, NYC-YYZ, CMI-LAX, CMI-SFO, CMI-MEX, CMI-MIA, CMI-ATL, CMI-WAS, CMI-YYZ, CMI-NYC, CMI-CHI" size=50 class="dash-input" tabindex="1"><input type="image" name="QCM" value="M" tabindex="2" src="/trans.gif" alt=""></td>
+</tr>
+<tr valign=top>
+<td width="25%" valign=middle align=left><input type="image" name="QCm" tabindex="3" value="Map" title="Map a path (e.g., SFO-NRT-SIN)" src="/images/dash-m-a.gif" alt="Map"></td>
+<td width="25%" valign=middle align=center><input type="image" name="QCd" tabindex="4" value="Distance" title="Calculate distances along a path (e.g., LHR-SYD" src="/images/dash-d.gif" alt="Distance"></td>
+<td width="25%" valign=middle align=center><input type="image" name="QCs" tabindex="5" value="Search" title="Search for location codes by name" src="/images/dash-s.gif" alt="Search"></td>
+<td width="25%" valign=middle align=right><input type="image" name="QCa" tabindex="6" value="Airport Info" title="Detailed information for an airport code" src="/images/dash-a.gif" alt="Airport Info"></td>
+</tr>
+</table>
+<input type="hidden" name="QD" value="M">
+</form></td>
+<td width="99%" class="dash-more"><center><div style="text-align:right;width:1%;">
+<a href="/faq" class="dash-more">FAQ</a><br>
+<a href="/featured" class="dash-more">Featured Maps</a><br>
+<a href="/more" class="dash-more">More</a><br>
+<a href="/" class="dash-strong">Home</a></div></center></td>
+</tr>
+</table><div id="horizon"><img src="/trans.gif" width=1 height=20 alt=""></div>
+</div><div id="mid">
+<script type="text/javascript"><!--
+glue_init('M',63); sect_init(); item_init();
+// --></script>
+<!-- **************************************************************** -->
+<span onclick="return sect_toggle(this,0);" class="knob" id="map"><span class="knob-img"><img src="/images/sect-hide.gif" width=12 height=12 border=0 alt="" id="map_knob">&nbsp;</span><span class="secthdr">Map</span></span><br>
+<div class="sect-show" id="map_body"><script type="text/javascript"><!--
+sect_reload("map",0);
+// --></script>
+<div class="mr"><script type="text/javascript"><!--
+mapui_mr_html("1800:i,900,540,240,120,60,30,15,");
+// --></script></div><div id="map_div"><img src="/map?P=SCL-LIM,+LIM-MEX,+LIM-BOG,+MEX-LAX,+MEX-CHI,+MEX-MIA,+MEX-BOG,+BOG-MIA,+BOG-SAO,+BOG-BUE,+BUE-SAO,+SAO-MAD,+SAO-LOS,+LOS-KRT,+LOS-FIH,+FIH-KRT,+FIH-JNB,+JNB-KRT,+KRT-CAI,+CAI-ALG,+CAI-IST,+CAI-BGW,+CAI-RUH,+ALG-MAD,+ALG-PAR,+ALG-IST,+MAD-NYC,+MAD-LON,+MAD-PAR,+LON-NYC,+LON-ESS,+LON-PAR,+PAR-ESS,+PAR-MIL,+MIL-ESS,+MIL-IST,+ESS-LED,+LED-MOW,+LED-IST,+MOW-THR,+MOW-IST,+IST-BGW,+BGW-THR,+BGW-KHI,+BGW-RUH,+THR-DEL,+THR-KHI,+THR-RUH,+RUH-KHI,+KHI-DEL,+KHI-BOM,+DEL-CCU,+DEL-MAA,+DEL-BOM,+BOM-MAA,+MAA-CCU,+MAA-BKK,+MAA-JKT,+CCU-HKG,+CCU-BKK,+BKK-HKG,+BKK-SGN,+BKK-JKT,+HKG-SHA,+HKG-TPE,+HKG-MNL,+HKG-SGN,+SHA-PEK,+SHA-ICN,+SHA-TYO,+SHA-TPE,+PEK-ICN,+ICN-TYO,+TYO-SFO,+TYO-OSA,+OSA-TPE,+TPE-MNL,+MNL-SFO,+MNL-SYD,+MNL-SGN,+SGN-JKT,+JKT-SYD,+SYD-LAX,+LAX-SFO,+LAX-CHI,+SFO-CHI,+CHI-YYZ,+CHI-ATL,+ATL-WAS,+ATL-MIA,+MIA-WAS,+WAS-YYZ,+WAS-NYC,+NYC-YYZ,+CMI-LAX,+CMI-SFO,+CMI-MEX,+CMI-MIA,+CMI-ATL,+CMI-WAS,+CMI-YYZ,+CMI-NYC,+CMI-CHI&amp;MS=wls&amp;MR=1800&amp;MX=720x360&amp;PM=*" alt="map" id="map_image" class="map-image" width=720 height=360></div>
+<div class="ms"><script type="text/javascript"><!--
+mapui_ms_html("wls");
+// --></script></div></div>
+<!-- **************************************************************** -->
+
+<br>
+<span onclick="return sect_toggle(this,1);" class="knob" id="dist"><span class="knob-img"><img src="/images/sect-hide.gif" width=12 height=12 border=0 alt="" id="dist_knob">&nbsp;</span><span class="secthdr">Distances</span></span><br>
+<div class="sect-show" id="dist_body"><script type="text/javascript"><!--
+sect_reload("dist",1);
+// --></script>
+
+<table border=0>
+<tr valign=bottom>
+<th><u>From</u></th><td rowspan="106">&nbsp;&nbsp;</td>
+<th><u>To</u></th><td rowspan="106">&nbsp;&nbsp;</td>
+<th colspan=2>Initial<br><u>Heading</u></th><td rowspan="106">&nbsp;&nbsp;</td>
+<th><u>Distance</u></th><td rowspan="106">&nbsp;&nbsp;</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SCL" class="fn url">SCL</a></span> (<abbr class="latitude" title="-33.392974"></abbr>33°23'35"S  <abbr class="longitude" title="-70.785802"></abbr>70°47'09"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LIM" class="fn url">LIM</a></span> (<abbr class="latitude" title="-12.021888"></abbr>12°01'19"S  <abbr class="longitude" title="-77.114318"></abbr>77°06'52"W)</span></td>
+<td align=right>343.3°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+1524&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LIM" class="fn url">LIM</a></span> (<abbr class="latitude" title="-12.021888"></abbr>12°01'19"S  <abbr class="longitude" title="-77.114318"></abbr>77°06'52"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td align=right>325.0°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+2629&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LIM" class="fn url">LIM</a></span> (<abbr class="latitude" title="-12.021888"></abbr>12°01'19"S  <abbr class="longitude" title="-77.114318"></abbr>77°06'52"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOG" class="fn url">BOG</a></span> (<abbr class="latitude" title="4.703056"></abbr>4°42'11"N  <abbr class="longitude" title="-74.138332"></abbr>74°08'18"W)</span></td>
+<td align=right>10.3°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+1167&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LAX" class="fn url">LAX</a></span> (<abbr class="latitude" title="33.942495"></abbr>33°56'33"N  <abbr class="longitude" title="-118.408067"></abbr>118°24'29"W)</span></td>
+<td align=right>313.9°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+1553&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td align=right>21.0°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+1686&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIA" class="fn url">MIA</a></span> (<abbr class="latitude" title="25.795361"></abbr>25°47'43"N  <abbr class="longitude" title="-80.290110"></abbr>80°17'24"W)</span></td>
+<td align=right>66.5°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1276&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOG" class="fn url">BOG</a></span> (<abbr class="latitude" title="4.703056"></abbr>4°42'11"N  <abbr class="longitude" title="-74.138332"></abbr>74°08'18"W)</span></td>
+<td align=right>117.8°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1962&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOG" class="fn url">BOG</a></span> (<abbr class="latitude" title="4.703056"></abbr>4°42'11"N  <abbr class="longitude" title="-74.138332"></abbr>74°08'18"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIA" class="fn url">MIA</a></span> (<abbr class="latitude" title="25.795361"></abbr>25°47'43"N  <abbr class="longitude" title="-80.290110"></abbr>80°17'24"W)</span></td>
+<td align=right>344.9°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+1507&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOG" class="fn url">BOG</a></span> (<abbr class="latitude" title="4.703056"></abbr>4°42'11"N  <abbr class="longitude" title="-74.138332"></abbr>74°08'18"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SAO" class="fn url">SAO</a></span> (<abbr class="latitude" title="-23.533"></abbr>23°32'S  <abbr class="longitude" title="-46.617"></abbr>46°37'W)</span></td>
+<td align=right>137.5°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+2686&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOG" class="fn url">BOG</a></span> (<abbr class="latitude" title="4.703056"></abbr>4°42'11"N  <abbr class="longitude" title="-74.138332"></abbr>74°08'18"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BUE" class="fn url">BUE</a></span> (<abbr class="latitude" title="-34.600"></abbr>34°36'S  <abbr class="longitude" title="-58.450"></abbr>58°27'W)</span></td>
+<td align=right>160.5°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+2890&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BUE" class="fn url">BUE</a></span> (<abbr class="latitude" title="-34.600"></abbr>34°36'S  <abbr class="longitude" title="-58.450"></abbr>58°27'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SAO" class="fn url">SAO</a></span> (<abbr class="latitude" title="-23.533"></abbr>23°32'S  <abbr class="longitude" title="-46.617"></abbr>46°37'W)</span></td>
+<td align=right>46.3°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1044&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SAO" class="fn url">SAO</a></span> (<abbr class="latitude" title="-23.533"></abbr>23°32'S  <abbr class="longitude" title="-46.617"></abbr>46°37'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAD" class="fn url">MAD</a></span> (<abbr class="latitude" title="40.493556"></abbr>40°29'37"N  <abbr class="longitude" title="-3.566763"></abbr>3°34'00"W)</span></td>
+<td align=right>32.6°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+5203&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SAO" class="fn url">SAO</a></span> (<abbr class="latitude" title="-23.533"></abbr>23°32'S  <abbr class="longitude" title="-46.617"></abbr>46°37'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LOS" class="fn url">LOS</a></span> (<abbr class="latitude" title="6.577369"></abbr>6°34'39"N  <abbr class="longitude" title="3.321156"></abbr>3°19'16"E)</span></td>
+<td align=right>64.8°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+3956&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LOS" class="fn url">LOS</a></span> (<abbr class="latitude" title="6.577369"></abbr>6°34'39"N  <abbr class="longitude" title="3.321156"></abbr>3°19'16"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KRT" class="fn url">KRT</a></span> (<abbr class="latitude" title="15.589497"></abbr>15°35'22"N  <abbr class="longitude" title="32.553161"></abbr>32°33'11"E)</span></td>
+<td align=right>70.2°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+2076&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LOS" class="fn url">LOS</a></span> (<abbr class="latitude" title="6.577369"></abbr>6°34'39"N  <abbr class="longitude" title="3.321156"></abbr>3°19'16"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/FIH" class="fn url">FIH</a></span> (<abbr class="latitude" title="-4.385749"></abbr>4°23'09"S  <abbr class="longitude" title="15.444569"></abbr>15°26'40"E)</span></td>
+<td align=right>131.7°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1126&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/FIH" class="fn url">FIH</a></span> (<abbr class="latitude" title="-4.385749"></abbr>4°23'09"S  <abbr class="longitude" title="15.444569"></abbr>15°26'40"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KRT" class="fn url">KRT</a></span> (<abbr class="latitude" title="15.589497"></abbr>15°35'22"N  <abbr class="longitude" title="32.553161"></abbr>32°33'11"E)</span></td>
+<td align=right>40.1°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1805&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/FIH" class="fn url">FIH</a></span> (<abbr class="latitude" title="-4.385749"></abbr>4°23'09"S  <abbr class="longitude" title="15.444569"></abbr>15°26'40"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JNB" class="fn url">JNB</a></span> (<abbr class="latitude" title="-26.133693"></abbr>26°08'01"S  <abbr class="longitude" title="28.242317"></abbr>28°14'32"E)</span></td>
+<td align=right>151.7°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1719&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JNB" class="fn url">JNB</a></span> (<abbr class="latitude" title="-26.133693"></abbr>26°08'01"S  <abbr class="longitude" title="28.242317"></abbr>28°14'32"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KRT" class="fn url">KRT</a></span> (<abbr class="latitude" title="15.589497"></abbr>15°35'22"N  <abbr class="longitude" title="32.553161"></abbr>32°33'11"E)</span></td>
+<td align=right>6.3°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+2883&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KRT" class="fn url">KRT</a></span> (<abbr class="latitude" title="15.589497"></abbr>15°35'22"N  <abbr class="longitude" title="32.553161"></abbr>32°33'11"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CAI" class="fn url">CAI</a></span> (<abbr class="latitude" title="30.121944"></abbr>30°07'19"N  <abbr class="longitude" title="31.405556"></abbr>31°24'20"E)</span></td>
+<td align=right>356.0°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+1003&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CAI" class="fn url">CAI</a></span> (<abbr class="latitude" title="30.121944"></abbr>30°07'19"N  <abbr class="longitude" title="31.405556"></abbr>31°24'20"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ALG" class="fn url">ALG</a></span> (<abbr class="latitude" title="36.694444"></abbr>36°41'40"N  <abbr class="longitude" title="3.216944"></abbr>3°13'01"E)</span></td>
+<td align=right>293.1°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+1684&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CAI" class="fn url">CAI</a></span> (<abbr class="latitude" title="30.121944"></abbr>30°07'19"N  <abbr class="longitude" title="31.405556"></abbr>31°24'20"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td align=right>349.7°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+762&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CAI" class="fn url">CAI</a></span> (<abbr class="latitude" title="30.121944"></abbr>30°07'19"N  <abbr class="longitude" title="31.405556"></abbr>31°24'20"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BGW" class="fn url">BGW</a></span> (<abbr class="latitude" title="33.262539"></abbr>33°15'45"N  <abbr class="longitude" title="44.234577"></abbr>44°14'04"E)</span></td>
+<td align=right>70.7°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+786&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CAI" class="fn url">CAI</a></span> (<abbr class="latitude" title="30.121944"></abbr>30°07'19"N  <abbr class="longitude" title="31.405556"></abbr>31°24'20"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/RUH" class="fn url">RUH</a></span> (<abbr class="latitude" title="24.957640"></abbr>24°57'28"N  <abbr class="longitude" title="46.698776"></abbr>46°41'56"E)</span></td>
+<td align=right>107.1°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1003&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ALG" class="fn url">ALG</a></span> (<abbr class="latitude" title="36.694444"></abbr>36°41'40"N  <abbr class="longitude" title="3.216944"></abbr>3°13'01"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAD" class="fn url">MAD</a></span> (<abbr class="latitude" title="40.493556"></abbr>40°29'37"N  <abbr class="longitude" title="-3.566763"></abbr>3°34'00"W)</span></td>
+<td align=right>307.6°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+451&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ALG" class="fn url">ALG</a></span> (<abbr class="latitude" title="36.694444"></abbr>36°41'40"N  <abbr class="longitude" title="3.216944"></abbr>3°13'01"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PAR" class="fn url">PAR</a></span> (<abbr class="latitude" title="48.867"></abbr>48°52'N  <abbr class="longitude" title="2.333"></abbr>2°20'E)</span></td>
+<td align=right>357.2°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+841&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ALG" class="fn url">ALG</a></span> (<abbr class="latitude" title="36.694444"></abbr>36°41'40"N  <abbr class="longitude" title="3.216944"></abbr>3°13'01"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td align=right>70.0°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1407&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAD" class="fn url">MAD</a></span> (<abbr class="latitude" title="40.493556"></abbr>40°29'37"N  <abbr class="longitude" title="-3.566763"></abbr>3°34'00"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/NYC" class="fn url">NYC</a></span> (<abbr class="latitude" title="40.756"></abbr>40°45'N  <abbr class="longitude" title="-73.986"></abbr>73°59'W)</span></td>
+<td align=right>294.9°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+3595&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAD" class="fn url">MAD</a></span> (<abbr class="latitude" title="40.493556"></abbr>40°29'37"N  <abbr class="longitude" title="-3.566763"></abbr>3°34'00"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LON" class="fn url">LON</a></span> (<abbr class="latitude" title="51.500"></abbr>51°30'N  <abbr class="longitude" title="-0.167"></abbr>0°10'W)</span></td>
+<td align=right>10.9°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+777&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAD" class="fn url">MAD</a></span> (<abbr class="latitude" title="40.493556"></abbr>40°29'37"N  <abbr class="longitude" title="-3.566763"></abbr>3°34'00"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PAR" class="fn url">PAR</a></span> (<abbr class="latitude" title="48.867"></abbr>48°52'N  <abbr class="longitude" title="2.333"></abbr>2°20'E)</span></td>
+<td align=right>24.6°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+647&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LON" class="fn url">LON</a></span> (<abbr class="latitude" title="51.500"></abbr>51°30'N  <abbr class="longitude" title="-0.167"></abbr>0°10'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/NYC" class="fn url">NYC</a></span> (<abbr class="latitude" title="40.756"></abbr>40°45'N  <abbr class="longitude" title="-73.986"></abbr>73°59'W)</span></td>
+<td align=right>288.4°</td>
+<td>&nbsp;(W)</td>
+<td align=right>
+3466&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LON" class="fn url">LON</a></span> (<abbr class="latitude" title="51.500"></abbr>51°30'N  <abbr class="longitude" title="-0.167"></abbr>0°10'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ESS" class="fn url">ESS</a></span> (<abbr class="latitude" title="51.402333"></abbr>51°24'08"N  <abbr class="longitude" title="6.937333"></abbr>6°56'14"E)</span></td>
+<td align=right>88.5°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+307&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LON" class="fn url">LON</a></span> (<abbr class="latitude" title="51.500"></abbr>51°30'N  <abbr class="longitude" title="-0.167"></abbr>0°10'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PAR" class="fn url">PAR</a></span> (<abbr class="latitude" title="48.867"></abbr>48°52'N  <abbr class="longitude" title="2.333"></abbr>2°20'E)</span></td>
+<td align=right>147.7°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+213&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PAR" class="fn url">PAR</a></span> (<abbr class="latitude" title="48.867"></abbr>48°52'N  <abbr class="longitude" title="2.333"></abbr>2°20'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ESS" class="fn url">ESS</a></span> (<abbr class="latitude" title="51.402333"></abbr>51°24'08"N  <abbr class="longitude" title="6.937333"></abbr>6°56'14"E)</span></td>
+<td align=right>47.7°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+269&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PAR" class="fn url">PAR</a></span> (<abbr class="latitude" title="48.867"></abbr>48°52'N  <abbr class="longitude" title="2.333"></abbr>2°20'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIL" class="fn url">MIL</a></span> (<abbr class="latitude" title="45.467"></abbr>45°28'N  <abbr class="longitude" title="9.200"></abbr>9°12'E)</span></td>
+<td align=right>123.4°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+400&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIL" class="fn url">MIL</a></span> (<abbr class="latitude" title="45.467"></abbr>45°28'N  <abbr class="longitude" title="9.200"></abbr>9°12'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ESS" class="fn url">ESS</a></span> (<abbr class="latitude" title="51.402333"></abbr>51°24'08"N  <abbr class="longitude" title="6.937333"></abbr>6°56'14"E)</span></td>
+<td align=right>346.6°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+423&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIL" class="fn url">MIL</a></span> (<abbr class="latitude" title="45.467"></abbr>45°28'N  <abbr class="longitude" title="9.200"></abbr>9°12'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td align=right>100.5°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1035&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ESS" class="fn url">ESS</a></span> (<abbr class="latitude" title="51.402333"></abbr>51°24'08"N  <abbr class="longitude" title="6.937333"></abbr>6°56'14"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LED" class="fn url">LED</a></span> (<abbr class="latitude" title="59.800292"></abbr>59°48'01"N  <abbr class="longitude" title="30.262503"></abbr>30°15'45"E)</span></td>
+<td align=right>48.2°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1074&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LED" class="fn url">LED</a></span> (<abbr class="latitude" title="59.800292"></abbr>59°48'01"N  <abbr class="longitude" title="30.262503"></abbr>30°15'45"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MOW" class="fn url">MOW</a></span> (<abbr class="latitude" title="55.750"></abbr>55°45'N  <abbr class="longitude" title="37.583"></abbr>37°35'E)</span></td>
+<td align=right>132.9°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+389&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LED" class="fn url">LED</a></span> (<abbr class="latitude" title="59.800292"></abbr>59°48'01"N  <abbr class="longitude" title="30.262503"></abbr>30°15'45"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td align=right>183.4°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+1303&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MOW" class="fn url">MOW</a></span> (<abbr class="latitude" title="55.750"></abbr>55°45'N  <abbr class="longitude" title="37.583"></abbr>37°35'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/THR" class="fn url">THR</a></span> (<abbr class="latitude" title="35.689167"></abbr>35°41'21"N  <abbr class="longitude" title="51.313416"></abbr>51°18'48"E)</span></td>
+<td align=right>149.2°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1530&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MOW" class="fn url">MOW</a></span> (<abbr class="latitude" title="55.750"></abbr>55°45'N  <abbr class="longitude" title="37.583"></abbr>37°35'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td align=right>205.0°</td>
+<td>&nbsp;(SW)</td>
+<td align=right>
+1096&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/IST" class="fn url">IST</a></span> (<abbr class="latitude" title="40.976111"></abbr>40°58'34"N  <abbr class="longitude" title="28.813889"></abbr>28°48'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BGW" class="fn url">BGW</a></span> (<abbr class="latitude" title="33.262539"></abbr>33°15'45"N  <abbr class="longitude" title="44.234577"></abbr>44°14'04"E)</span></td>
+<td align=right>117.1°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1002&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BGW" class="fn url">BGW</a></span> (<abbr class="latitude" title="33.262539"></abbr>33°15'45"N  <abbr class="longitude" title="44.234577"></abbr>44°14'04"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/THR" class="fn url">THR</a></span> (<abbr class="latitude" title="35.689167"></abbr>35°41'21"N  <abbr class="longitude" title="51.313416"></abbr>51°18'48"E)</span></td>
+<td align=right>65.5°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+437&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BGW" class="fn url">BGW</a></span> (<abbr class="latitude" title="33.262539"></abbr>33°15'45"N  <abbr class="longitude" title="44.234577"></abbr>44°14'04"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KHI" class="fn url">KHI</a></span> (<abbr class="latitude" title="24.906547"></abbr>24°54'24"N  <abbr class="longitude" title="67.160797"></abbr>67°09'39"E)</span></td>
+<td align=right>106.6°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1497&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BGW" class="fn url">BGW</a></span> (<abbr class="latitude" title="33.262539"></abbr>33°15'45"N  <abbr class="longitude" title="44.234577"></abbr>44°14'04"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/RUH" class="fn url">RUH</a></span> (<abbr class="latitude" title="24.957640"></abbr>24°57'28"N  <abbr class="longitude" title="46.698776"></abbr>46°41'56"E)</span></td>
+<td align=right>164.8°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+591&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/THR" class="fn url">THR</a></span> (<abbr class="latitude" title="35.689167"></abbr>35°41'21"N  <abbr class="longitude" title="51.313416"></abbr>51°18'48"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/DEL" class="fn url">DEL</a></span> (<abbr class="latitude" title="28.568728"></abbr>28°34'07"N  <abbr class="longitude" title="77.112136"></abbr>77°06'44"E)</span></td>
+<td align=right>100.7°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1585&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/THR" class="fn url">THR</a></span> (<abbr class="latitude" title="35.689167"></abbr>35°41'21"N  <abbr class="longitude" title="51.313416"></abbr>51°18'48"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KHI" class="fn url">KHI</a></span> (<abbr class="latitude" title="24.906547"></abbr>24°54'24"N  <abbr class="longitude" title="67.160797"></abbr>67°09'39"E)</span></td>
+<td align=right>123.8°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1201&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/THR" class="fn url">THR</a></span> (<abbr class="latitude" title="35.689167"></abbr>35°41'21"N  <abbr class="longitude" title="51.313416"></abbr>51°18'48"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/RUH" class="fn url">RUH</a></span> (<abbr class="latitude" title="24.957640"></abbr>24°57'28"N  <abbr class="longitude" title="46.698776"></abbr>46°41'56"E)</span></td>
+<td align=right>201.7°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+789&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/RUH" class="fn url">RUH</a></span> (<abbr class="latitude" title="24.957640"></abbr>24°57'28"N  <abbr class="longitude" title="46.698776"></abbr>46°41'56"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KHI" class="fn url">KHI</a></span> (<abbr class="latitude" title="24.906547"></abbr>24°54'24"N  <abbr class="longitude" title="67.160797"></abbr>67°09'39"E)</span></td>
+<td align=right>85.8°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1283&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KHI" class="fn url">KHI</a></span> (<abbr class="latitude" title="24.906547"></abbr>24°54'24"N  <abbr class="longitude" title="67.160797"></abbr>67°09'39"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/DEL" class="fn url">DEL</a></span> (<abbr class="latitude" title="28.568728"></abbr>28°34'07"N  <abbr class="longitude" title="77.112136"></abbr>77°06'44"E)</span></td>
+<td align=right>65.5°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+665&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/KHI" class="fn url">KHI</a></span> (<abbr class="latitude" title="24.906547"></abbr>24°54'24"N  <abbr class="longitude" title="67.160797"></abbr>67°09'39"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOM" class="fn url">BOM</a></span> (<abbr class="latitude" title="19.088686"></abbr>19°05'19"N  <abbr class="longitude" title="72.867919"></abbr>72°52'05"E)</span></td>
+<td align=right>136.4°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+542&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/DEL" class="fn url">DEL</a></span> (<abbr class="latitude" title="28.568728"></abbr>28°34'07"N  <abbr class="longitude" title="77.112136"></abbr>77°06'44"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CCU" class="fn url">CCU</a></span> (<abbr class="latitude" title="22.654739"></abbr>22°39'17"N  <abbr class="longitude" title="88.446722"></abbr>88°26'48"E)</span></td>
+<td align=right>117.4°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+816&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/DEL" class="fn url">DEL</a></span> (<abbr class="latitude" title="28.568728"></abbr>28°34'07"N  <abbr class="longitude" title="77.112136"></abbr>77°06'44"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAA" class="fn url">MAA</a></span> (<abbr class="latitude" title="12.994414"></abbr>12°59'40"N  <abbr class="longitude" title="80.180517"></abbr>80°10'50"E)</span></td>
+<td align=right>168.9°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+1090&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/DEL" class="fn url">DEL</a></span> (<abbr class="latitude" title="28.568728"></abbr>28°34'07"N  <abbr class="longitude" title="77.112136"></abbr>77°06'44"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOM" class="fn url">BOM</a></span> (<abbr class="latitude" title="19.088686"></abbr>19°05'19"N  <abbr class="longitude" title="72.867919"></abbr>72°52'05"E)</span></td>
+<td align=right>203.3°</td>
+<td>&nbsp;(SW)</td>
+<td align=right>
+705&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BOM" class="fn url">BOM</a></span> (<abbr class="latitude" title="19.088686"></abbr>19°05'19"N  <abbr class="longitude" title="72.867919"></abbr>72°52'05"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAA" class="fn url">MAA</a></span> (<abbr class="latitude" title="12.994414"></abbr>12°59'40"N  <abbr class="longitude" title="80.180517"></abbr>80°10'50"E)</span></td>
+<td align=right>129.7°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+642&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAA" class="fn url">MAA</a></span> (<abbr class="latitude" title="12.994414"></abbr>12°59'40"N  <abbr class="longitude" title="80.180517"></abbr>80°10'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CCU" class="fn url">CCU</a></span> (<abbr class="latitude" title="22.654739"></abbr>22°39'17"N  <abbr class="longitude" title="88.446722"></abbr>88°26'48"E)</span></td>
+<td align=right>38.1°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+858&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAA" class="fn url">MAA</a></span> (<abbr class="latitude" title="12.994414"></abbr>12°59'40"N  <abbr class="longitude" title="80.180517"></abbr>80°10'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BKK" class="fn url">BKK</a></span> (<abbr class="latitude" title="13.681108"></abbr>13°40'52"N  <abbr class="longitude" title="100.747283"></abbr>100°44'50"E)</span></td>
+<td align=right>85.7°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1385&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MAA" class="fn url">MAA</a></span> (<abbr class="latitude" title="12.994414"></abbr>12°59'40"N  <abbr class="longitude" title="80.180517"></abbr>80°10'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JKT" class="fn url">JKT</a></span> (<abbr class="latitude" title="-6.167"></abbr>6°10'S  <abbr class="longitude" title="106.800"></abbr>106°48'E)</span></td>
+<td align=right>124.2°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+2254&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CCU" class="fn url">CCU</a></span> (<abbr class="latitude" title="22.654739"></abbr>22°39'17"N  <abbr class="longitude" title="88.446722"></abbr>88°26'48"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td align=right>85.9°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1627&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CCU" class="fn url">CCU</a></span> (<abbr class="latitude" title="22.654739"></abbr>22°39'17"N  <abbr class="longitude" title="88.446722"></abbr>88°26'48"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BKK" class="fn url">BKK</a></span> (<abbr class="latitude" title="13.681108"></abbr>13°40'52"N  <abbr class="longitude" title="100.747283"></abbr>100°44'50"E)</span></td>
+<td align=right>125.3°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1016&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BKK" class="fn url">BKK</a></span> (<abbr class="latitude" title="13.681108"></abbr>13°40'52"N  <abbr class="longitude" title="100.747283"></abbr>100°44'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td align=right>53.7°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1049&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BKK" class="fn url">BKK</a></span> (<abbr class="latitude" title="13.681108"></abbr>13°40'52"N  <abbr class="longitude" title="100.747283"></abbr>100°44'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SGN" class="fn url">SGN</a></span> (<abbr class="latitude" title="10.818797"></abbr>10°49'08"N  <abbr class="longitude" title="106.651856"></abbr>106°39'07"E)</span></td>
+<td align=right>115.6°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+445&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/BKK" class="fn url">BKK</a></span> (<abbr class="latitude" title="13.681108"></abbr>13°40'52"N  <abbr class="longitude" title="100.747283"></abbr>100°44'50"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JKT" class="fn url">JKT</a></span> (<abbr class="latitude" title="-6.167"></abbr>6°10'S  <abbr class="longitude" title="106.800"></abbr>106°48'E)</span></td>
+<td align=right>162.7°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+1426&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SHA" class="fn url">SHA</a></span> (<abbr class="latitude" title="31.197778"></abbr>31°11'52"N  <abbr class="longitude" title="121.334167"></abbr>121°20'03"E)</span></td>
+<td align=right>35.2°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+764&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TPE" class="fn url">TPE</a></span> (<abbr class="latitude" title="25.077731"></abbr>25°04'40"N  <abbr class="longitude" title="121.232822"></abbr>121°13'58"E)</span></td>
+<td align=right>66.2°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+501&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MNL" class="fn url">MNL</a></span> (<abbr class="latitude" title="14.508647"></abbr>14°30'31"N  <abbr class="longitude" title="121.019581"></abbr>121°01'10"E)</span></td>
+<td align=right>137.8°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+711&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/HKG" class="fn url">HKG</a></span> (<abbr class="latitude" title="22.308889"></abbr>22°18'32"N  <abbr class="longitude" title="113.914722"></abbr>113°54'53"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SGN" class="fn url">SGN</a></span> (<abbr class="latitude" title="10.818797"></abbr>10°49'08"N  <abbr class="longitude" title="106.651856"></abbr>106°39'07"E)</span></td>
+<td align=right>212.5°</td>
+<td>&nbsp;(SW)</td>
+<td align=right>
+925&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SHA" class="fn url">SHA</a></span> (<abbr class="latitude" title="31.197778"></abbr>31°11'52"N  <abbr class="longitude" title="121.334167"></abbr>121°20'03"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PEK" class="fn url">PEK</a></span> (<abbr class="latitude" title="40.080111"></abbr>40°04'48"N  <abbr class="longitude" title="116.584556"></abbr>116°35'04"E)</span></td>
+<td align=right>337.8°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+668&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SHA" class="fn url">SHA</a></span> (<abbr class="latitude" title="31.197778"></abbr>31°11'52"N  <abbr class="longitude" title="121.334167"></abbr>121°20'03"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ICN" class="fn url">ICN</a></span> (<abbr class="latitude" title="37.469075"></abbr>37°28'09"N  <abbr class="longitude" title="126.450517"></abbr>126°27'02"E)</span></td>
+<td align=right>32.7°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+522&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SHA" class="fn url">SHA</a></span> (<abbr class="latitude" title="31.197778"></abbr>31°11'52"N  <abbr class="longitude" title="121.334167"></abbr>121°20'03"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TYO" class="fn url">TYO</a></span> (<abbr class="latitude" title="35.700"></abbr>35°42'N  <abbr class="longitude" title="139.767"></abbr>139°46'E)</span></td>
+<td align=right>68.8°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1107&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SHA" class="fn url">SHA</a></span> (<abbr class="latitude" title="31.197778"></abbr>31°11'52"N  <abbr class="longitude" title="121.334167"></abbr>121°20'03"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TPE" class="fn url">TPE</a></span> (<abbr class="latitude" title="25.077731"></abbr>25°04'40"N  <abbr class="longitude" title="121.232822"></abbr>121°13'58"E)</span></td>
+<td align=right>180.9°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+421&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/PEK" class="fn url">PEK</a></span> (<abbr class="latitude" title="40.080111"></abbr>40°04'48"N  <abbr class="longitude" title="116.584556"></abbr>116°35'04"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ICN" class="fn url">ICN</a></span> (<abbr class="latitude" title="37.469075"></abbr>37°28'09"N  <abbr class="longitude" title="126.450517"></abbr>126°27'02"E)</span></td>
+<td align=right>105.5°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+562&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ICN" class="fn url">ICN</a></span> (<abbr class="latitude" title="37.469075"></abbr>37°28'09"N  <abbr class="longitude" title="126.450517"></abbr>126°27'02"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TYO" class="fn url">TYO</a></span> (<abbr class="latitude" title="35.700"></abbr>35°42'N  <abbr class="longitude" title="139.767"></abbr>139°46'E)</span></td>
+<td align=right>95.3°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+750&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TYO" class="fn url">TYO</a></span> (<abbr class="latitude" title="35.700"></abbr>35°42'N  <abbr class="longitude" title="139.767"></abbr>139°46'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SFO" class="fn url">SFO</a></span> (<abbr class="latitude" title="37.618817"></abbr>37°37'08"N  <abbr class="longitude" title="-122.375427"></abbr>122°22'32"W)</span></td>
+<td align=right>54.5°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+5155&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TYO" class="fn url">TYO</a></span> (<abbr class="latitude" title="35.700"></abbr>35°42'N  <abbr class="longitude" title="139.767"></abbr>139°46'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/OSA" class="fn url">OSA</a></span> (<abbr class="latitude" title="34.694"></abbr>34°42'N  <abbr class="longitude" title="135.502"></abbr>135°30'E)</span></td>
+<td align=right>255.2°</td>
+<td>&nbsp;(W)</td>
+<td align=right>
+251&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/OSA" class="fn url">OSA</a></span> (<abbr class="latitude" title="34.694"></abbr>34°42'N  <abbr class="longitude" title="135.502"></abbr>135°30'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TPE" class="fn url">TPE</a></span> (<abbr class="latitude" title="25.077731"></abbr>25°04'40"N  <abbr class="longitude" title="121.232822"></abbr>121°13'58"E)</span></td>
+<td align=right>236.0°</td>
+<td>&nbsp;(SW)</td>
+<td align=right>
+1081&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/TPE" class="fn url">TPE</a></span> (<abbr class="latitude" title="25.077731"></abbr>25°04'40"N  <abbr class="longitude" title="121.232822"></abbr>121°13'58"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MNL" class="fn url">MNL</a></span> (<abbr class="latitude" title="14.508647"></abbr>14°30'31"N  <abbr class="longitude" title="121.019581"></abbr>121°01'10"E)</span></td>
+<td align=right>181.1°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+727&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MNL" class="fn url">MNL</a></span> (<abbr class="latitude" title="14.508647"></abbr>14°30'31"N  <abbr class="longitude" title="121.019581"></abbr>121°01'10"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SFO" class="fn url">SFO</a></span> (<abbr class="latitude" title="37.618817"></abbr>37°37'08"N  <abbr class="longitude" title="-122.375427"></abbr>122°22'32"W)</span></td>
+<td align=right>46.2°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+6987&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MNL" class="fn url">MNL</a></span> (<abbr class="latitude" title="14.508647"></abbr>14°30'31"N  <abbr class="longitude" title="121.019581"></abbr>121°01'10"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SYD" class="fn url">SYD</a></span> (<abbr class="latitude" title="-33.946110"></abbr>33°56'46"S  <abbr class="longitude" title="151.177222"></abbr>151°10'38"E)</span></td>
+<td align=right>149.8°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+3879&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MNL" class="fn url">MNL</a></span> (<abbr class="latitude" title="14.508647"></abbr>14°30'31"N  <abbr class="longitude" title="121.019581"></abbr>121°01'10"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SGN" class="fn url">SGN</a></span> (<abbr class="latitude" title="10.818797"></abbr>10°49'08"N  <abbr class="longitude" title="106.651856"></abbr>106°39'07"E)</span></td>
+<td align=right>257.0°</td>
+<td>&nbsp;(W)</td>
+<td align=right>
+1002&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SGN" class="fn url">SGN</a></span> (<abbr class="latitude" title="10.818797"></abbr>10°49'08"N  <abbr class="longitude" title="106.651856"></abbr>106°39'07"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JKT" class="fn url">JKT</a></span> (<abbr class="latitude" title="-6.167"></abbr>6°10'S  <abbr class="longitude" title="106.800"></abbr>106°48'E)</span></td>
+<td align=right>179.5°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+1167&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/JKT" class="fn url">JKT</a></span> (<abbr class="latitude" title="-6.167"></abbr>6°10'S  <abbr class="longitude" title="106.800"></abbr>106°48'E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SYD" class="fn url">SYD</a></span> (<abbr class="latitude" title="-33.946110"></abbr>33°56'46"S  <abbr class="longitude" title="151.177222"></abbr>151°10'38"E)</span></td>
+<td align=right>130.1°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+3419&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SYD" class="fn url">SYD</a></span> (<abbr class="latitude" title="-33.946110"></abbr>33°56'46"S  <abbr class="longitude" title="151.177222"></abbr>151°10'38"E)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LAX" class="fn url">LAX</a></span> (<abbr class="latitude" title="33.942495"></abbr>33°56'33"N  <abbr class="longitude" title="-118.408067"></abbr>118°24'29"W)</span></td>
+<td align=right>61.2°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+7488&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LAX" class="fn url">LAX</a></span> (<abbr class="latitude" title="33.942495"></abbr>33°56'33"N  <abbr class="longitude" title="-118.408067"></abbr>118°24'29"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SFO" class="fn url">SFO</a></span> (<abbr class="latitude" title="37.618817"></abbr>37°37'08"N  <abbr class="longitude" title="-122.375427"></abbr>122°22'32"W)</span></td>
+<td align=right>319.8°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+337&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LAX" class="fn url">LAX</a></span> (<abbr class="latitude" title="33.942495"></abbr>33°56'33"N  <abbr class="longitude" title="-118.408067"></abbr>118°24'29"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td align=right>62.8°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+1758&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SFO" class="fn url">SFO</a></span> (<abbr class="latitude" title="37.618817"></abbr>37°37'08"N  <abbr class="longitude" title="-122.375427"></abbr>122°22'32"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td align=right>69.9°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+1860&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/YYZ" class="fn url">YYZ</a></span> (<abbr class="latitude" title="43.677223"></abbr>43°40'38"N  <abbr class="longitude" title="-79.630555"></abbr>79°37'50"W)</span></td>
+<td align=right>70.4°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+425&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ATL" class="fn url">ATL</a></span> (<abbr class="latitude" title="33.636700"></abbr>33°38'12"N  <abbr class="longitude" title="-84.427863"></abbr>84°25'40"W)</span></td>
+<td align=right>161.9°</td>
+<td>&nbsp;(S)</td>
+<td align=right>
+595&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ATL" class="fn url">ATL</a></span> (<abbr class="latitude" title="33.636700"></abbr>33°38'12"N  <abbr class="longitude" title="-84.427863"></abbr>84°25'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/WAS" class="fn url">WAS</a></span> (<abbr class="latitude" title="38.883"></abbr>38°53'N  <abbr class="longitude" title="-77.033"></abbr>77°02'W)</span></td>
+<td align=right>46.6°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+549&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ATL" class="fn url">ATL</a></span> (<abbr class="latitude" title="33.636700"></abbr>33°38'12"N  <abbr class="longitude" title="-84.427863"></abbr>84°25'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIA" class="fn url">MIA</a></span> (<abbr class="latitude" title="25.795361"></abbr>25°47'43"N  <abbr class="longitude" title="-80.290110"></abbr>80°17'24"W)</span></td>
+<td align=right>154.2°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+594&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIA" class="fn url">MIA</a></span> (<abbr class="latitude" title="25.795361"></abbr>25°47'43"N  <abbr class="longitude" title="-80.290110"></abbr>80°17'24"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/WAS" class="fn url">WAS</a></span> (<abbr class="latitude" title="38.883"></abbr>38°53'N  <abbr class="longitude" title="-77.033"></abbr>77°02'W)</span></td>
+<td align=right>11.1°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+922&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/WAS" class="fn url">WAS</a></span> (<abbr class="latitude" title="38.883"></abbr>38°53'N  <abbr class="longitude" title="-77.033"></abbr>77°02'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/YYZ" class="fn url">YYZ</a></span> (<abbr class="latitude" title="43.677223"></abbr>43°40'38"N  <abbr class="longitude" title="-79.630555"></abbr>79°37'50"W)</span></td>
+<td align=right>338.6°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+357&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/WAS" class="fn url">WAS</a></span> (<abbr class="latitude" title="38.883"></abbr>38°53'N  <abbr class="longitude" title="-77.033"></abbr>77°02'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/NYC" class="fn url">NYC</a></span> (<abbr class="latitude" title="40.756"></abbr>40°45'N  <abbr class="longitude" title="-73.986"></abbr>73°59'W)</span></td>
+<td align=right>50.5°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+207&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/NYC" class="fn url">NYC</a></span> (<abbr class="latitude" title="40.756"></abbr>40°45'N  <abbr class="longitude" title="-73.986"></abbr>73°59'W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/YYZ" class="fn url">YYZ</a></span> (<abbr class="latitude" title="43.677223"></abbr>43°40'38"N  <abbr class="longitude" title="-79.630555"></abbr>79°37'50"W)</span></td>
+<td align=right>306.7°</td>
+<td>&nbsp;(NW)</td>
+<td align=right>
+353&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/LAX" class="fn url">LAX</a></span> (<abbr class="latitude" title="33.942495"></abbr>33°56'33"N  <abbr class="longitude" title="-118.408067"></abbr>118°24'29"W)</span></td>
+<td align=right>265.4°</td>
+<td>&nbsp;(W)</td>
+<td align=right>
+1710&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/SFO" class="fn url">SFO</a></span> (<abbr class="latitude" title="37.618817"></abbr>37°37'08"N  <abbr class="longitude" title="-122.375427"></abbr>122°22'32"W)</span></td>
+<td align=right>275.9°</td>
+<td>&nbsp;(W)</td>
+<td align=right>
+1836&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MEX" class="fn url">MEX</a></span> (<abbr class="latitude" title="19.436303"></abbr>19°26'11"N  <abbr class="longitude" title="-99.072096"></abbr>99°04'20"W)</span></td>
+<td align=right>207.5°</td>
+<td>&nbsp;(SW)</td>
+<td align=right>
+1557&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/MIA" class="fn url">MIA</a></span> (<abbr class="latitude" title="25.795361"></abbr>25°47'43"N  <abbr class="longitude" title="-80.290110"></abbr>80°17'24"W)</span></td>
+<td align=right>152.4°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+1085&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/ATL" class="fn url">ATL</a></span> (<abbr class="latitude" title="33.636700"></abbr>33°38'12"N  <abbr class="longitude" title="-84.427863"></abbr>84°25'40"W)</span></td>
+<td align=right>153.0°</td>
+<td>&nbsp;(SE)</td>
+<td align=right>
+490&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/WAS" class="fn url">WAS</a></span> (<abbr class="latitude" title="38.883"></abbr>38°53'N  <abbr class="longitude" title="-77.033"></abbr>77°02'W)</span></td>
+<td align=right>93.9°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+606&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/YYZ" class="fn url">YYZ</a></span> (<abbr class="latitude" title="43.677223"></abbr>43°40'38"N  <abbr class="longitude" title="-79.630555"></abbr>79°37'50"W)</span></td>
+<td align=right>57.8°</td>
+<td>&nbsp;(NE)</td>
+<td align=right>
+512&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/NYC" class="fn url">NYC</a></span> (<abbr class="latitude" title="40.756"></abbr>40°45'N  <abbr class="longitude" title="-73.986"></abbr>73°59'W)</span></td>
+<td align=right>81.6°</td>
+<td>&nbsp;(E)</td>
+<td align=right>
+755&nbsp;mi</td>
+</tr>
+<tr valign=baseline>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CMI" class="fn url">CMI</a></span> (<abbr class="latitude" title="40.038833"></abbr>40°02'20"N  <abbr class="longitude" title="-88.277805"></abbr>88°16'40"W)</span></td>
+<td nowrap><span class="smaller vcard geo"><span class="fn"><a href="/airport/CHI" class="fn url">CHI</a></span> (<abbr class="latitude" title="41.883"></abbr>41°53'N  <abbr class="longitude" title="-87.631"></abbr>87°38'W)</span></td>
+<td align=right>14.7°</td>
+<td>&nbsp;(N)</td>
+<td align=right>
+132&nbsp;mi</td>
+</tr>
+<tr><td height=8 nowrap> </td></tr><tr>
+<td colspan=2>Total:</td>
+<td></td>
+<td colspan=2></td>
+<td align=right>140783&nbsp;mi</td>
+</tr>
+</table>
+</div>
+
+
+<br>
+<span onclick="return sect_toggle(this,2);" class="knob" id="dict"><span class="knob-img"><img src="/images/sect-hide.gif" width=12 height=12 border=0 alt="" id="dict_knob">&nbsp;</span><span class="secthdr">Code Dictionary</span></span><br>
+<div class="sect-show" id="dict_body"><script type="text/javascript"><!--
+sect_reload("dict",2);
+// --></script>
+
+<table border=0>
+<tr>
+<th align=left><u>Code</u></th><td rowspan="50">&nbsp;&nbsp;</td>
+<th align=left><u>Source</u></th><td rowspan="50">&nbsp;&nbsp;</td>
+<th align=left><u>Location</u></th><td rowspan="50">&nbsp;&nbsp;</td>
+</tr>
+<tr valign=top>
+<td>SCL</td>
+<td>DAFIF</td>
+<td><a href="/airport/SCL" class="locname">Santiago de Chile [Arturo Merino Benítez Intl (Pudahuel Intl)], RM, CL</a></td>
+</tr>
+<tr valign=top>
+<td>LIM</td>
+<td>DAFIF</td>
+<td><a href="/airport/LIM" class="locname">Lima (Callao) [Jorge Chávez Intl], PE</a></td>
+</tr>
+<tr valign=top>
+<td>MEX</td>
+<td>DAFIF</td>
+<td><a href="/airport/MEX" class="locname">México City (Ciudad de México) [Benito Juárez Intl], DF, MX</a></td>
+</tr>
+<tr valign=top>
+<td>BOG</td>
+<td>AIP</td>
+<td><a href="/airport/BOG" class="locname">Bogotá [El Nuevo Dorado Intl], CO</a></td>
+</tr>
+<tr valign=top>
+<td>LAX</td>
+<td>FAA</td>
+<td><a href="/airport/LAX" class="locname">Los Angeles [Intl], CA, US</a></td>
+</tr>
+<tr valign=top>
+<td>CHI</td>
+<td>city</td>
+<td><a href="/airport/CHI" class="locname">Chicago [Metro Area], IL, US</a></td>
+</tr>
+<tr valign=top>
+<td>MIA</td>
+<td>FAA</td>
+<td><a href="/airport/MIA" class="locname">Miami [Intl], FL, US</a></td>
+</tr>
+<tr valign=top>
+<td>SAO</td>
+<td>city</td>
+<td><a href="/airport/SAO" class="locname">São Paulo [Metro Area], SP, BR</a></td>
+</tr>
+<tr valign=top>
+<td>BUE</td>
+<td>city</td>
+<td><a href="/airport/BUE" class="locname">Buenos Aires [Metro Area], DF, AR</a></td>
+</tr>
+<tr valign=top>
+<td>MAD</td>
+<td>DAFIF</td>
+<td><a href="/airport/MAD" class="locname">Madrid [Adolfo Suárez Madrid-Barajas Intl], MD, ES</a></td>
+</tr>
+<tr valign=top>
+<td>LOS</td>
+<td>DAFIF</td>
+<td><a href="/airport/LOS" class="locname">Lagos [Murtala Muhammed Intl], NG</a></td>
+</tr>
+<tr valign=top>
+<td>KRT</td>
+<td>DAFIF</td>
+<td><a href="/airport/KRT" class="locname">Khartoum, SD</a></td>
+</tr>
+<tr valign=top>
+<td>FIH</td>
+<td>DAFIF</td>
+<td><a href="/airport/FIH" class="locname">Kinshasa [N'Djili Intl], CD</a></td>
+</tr>
+<tr valign=top>
+<td>JNB</td>
+<td>AIP</td>
+<td><a href="/airport/JNB" class="locname">Johannesburg [Oliver Reginald Tambo Intl (Jan Smuts Intl)], ZA</a></td>
+</tr>
+<tr valign=top>
+<td>CAI</td>
+<td>DAFIF</td>
+<td><a href="/airport/CAI" class="locname">Cairo [Cairo Intl], EG</a></td>
+</tr>
+<tr valign=top>
+<td>ALG</td>
+<td>AIP</td>
+<td><a href="/airport/ALG" class="locname">Algiers [Houari Boumediene Airport (Algiers Airport)], DZ</a></td>
+</tr>
+<tr valign=top>
+<td>IST</td>
+<td>AIP</td>
+<td><a href="/airport/IST" class="locname">Istanbul [Atatürk Intl (Yesilköy Intl)], TR</a></td>
+</tr>
+<tr valign=top>
+<td>BGW</td>
+<td>AIP</td>
+<td><a href="/airport/BGW" class="locname">Baghdad [Intl (Saddam Intl, Al Anbar Airport)], IQ</a></td>
+</tr>
+<tr valign=top>
+<td>RUH</td>
+<td>DAFIF</td>
+<td><a href="/airport/RUH" class="locname">Riyadh [King Khalid Airport], SA</a></td>
+</tr>
+<tr valign=top>
+<td>PAR</td>
+<td>city</td>
+<td><a href="/airport/PAR" class="locname">Paris [Metro Area], FR</a></td>
+</tr>
+<tr valign=top>
+<td>NYC</td>
+<td>city</td>
+<td><a href="/airport/NYC" class="locname">New York [Metro Area], NY, US</a></td>
+</tr>
+<tr valign=top>
+<td>LON</td>
+<td>city</td>
+<td><a href="/airport/LON" class="locname">London [Metro Area], England, GB</a></td>
+</tr>
+<tr valign=top>
+<td>ESS</td>
+<td>DAFIF</td>
+<td><a href="/airport/ESS" class="locname">Essen-Mulheim, NW, DE</a></td>
+</tr>
+<tr valign=top>
+<td>MIL</td>
+<td>city</td>
+<td><a href="/airport/MIL" class="locname">Milan (Milano) [Metro Area], Lombardy, IT</a></td>
+</tr>
+<tr valign=top>
+<td>LED</td>
+<td>DAFIF</td>
+<td><a href="/airport/LED" class="locname">St. Petersburg (Leningrad) [Pulkovo-2], RU</a></td>
+</tr>
+<tr valign=top>
+<td>MOW</td>
+<td>city</td>
+<td><a href="/airport/MOW" class="locname">Moscow (Moskva) [Metro Area], RU</a></td>
+</tr>
+<tr valign=top>
+<td>THR</td>
+<td>DAFIF</td>
+<td><a href="/airport/THR" class="locname">Tehran (Teheran) [Mehrabad Intl (Qualeh Morgeh)], IR</a></td>
+</tr>
+<tr valign=top>
+<td>KHI</td>
+<td>DAFIF</td>
+<td><a href="/airport/KHI" class="locname">Karachi [Quaid-e-Azam / Jinnah Intl], PK</a></td>
+</tr>
+<tr valign=top>
+<td>DEL</td>
+<td>AIP</td>
+<td><a href="/airport/DEL" class="locname">New Delhi [Indira Gandhi Intl (Palam Airport)], IN</a></td>
+</tr>
+<tr valign=top>
+<td>BOM</td>
+<td>DAFIF</td>
+<td><a href="/airport/BOM" class="locname">Mumbai (Bombay) [Chhatrapati Shivaji Intl (Sahar Intl)], IN</a></td>
+</tr>
+<tr valign=top>
+<td>CCU</td>
+<td>DAFIF</td>
+<td><a href="/airport/CCU" class="locname">Kolkata (Calcutta) [Netaji Subhash Chandra Bose Intl (Dum Dum Airport)], IN</a></td>
+</tr>
+<tr valign=top>
+<td>MAA</td>
+<td>DAFIF</td>
+<td><a href="/airport/MAA" class="locname">Chennai/Madras [Meenambakkam], IN</a></td>
+</tr>
+<tr valign=top>
+<td>BKK</td>
+<td>DAFIF</td>
+<td><a href="/airport/BKK" class="locname">Bangkok [Suvarnabhumi Bangkok Intl], TH</a></td>
+</tr>
+<tr valign=top>
+<td>JKT</td>
+<td>city</td>
+<td><a href="/airport/JKT" class="locname">Jakarta [Metro Area], ID</a></td>
+</tr>
+<tr valign=top>
+<td>HKG</td>
+<td>AIP</td>
+<td><a href="/airport/HKG" class="locname">Hong Kong [Intl - Chek Lap Kok], HK</a></td>
+</tr>
+<tr valign=top>
+<td>SGN</td>
+<td>DAFIF</td>
+<td><a href="/airport/SGN" class="locname">Ho Chi Minh City (Saigon) [Tan Son Nhat Intl], VN</a></td>
+</tr>
+<tr valign=top>
+<td>SHA</td>
+<td>GCMAP</td>
+<td><a href="/airport/SHA" class="locname">Shanghai [Shanghai Hongqiao Intl], Shanghai, CN</a></td>
+</tr>
+<tr valign=top>
+<td>TPE</td>
+<td>DAFIF</td>
+<td><a href="/airport/TPE" class="locname">Taipei [Taiwan Taoyuan Intl (Chiang Kai Shek Intl)], TW</a></td>
+</tr>
+<tr valign=top>
+<td>MNL</td>
+<td>DAFIF</td>
+<td><a href="/airport/MNL" class="locname">Manila [Ninoy Aquino Intl], PH</a></td>
+</tr>
+<tr valign=top>
+<td>PEK</td>
+<td>DAFIF</td>
+<td><a href="/airport/PEK" class="locname">Beijing (Peking) [Capital], Beijing, CN</a></td>
+</tr>
+<tr valign=top>
+<td>ICN</td>
+<td>DAFIF</td>
+<td><a href="/airport/ICN" class="locname">Seoul [Incheon Intl], KR</a></td>
+</tr>
+<tr valign=top>
+<td>TYO</td>
+<td>city</td>
+<td><a href="/airport/TYO" class="locname">Tokyo [Metro Area], Honshu, JP</a></td>
+</tr>
+<tr valign=top>
+<td>SFO</td>
+<td>FAA</td>
+<td><a href="/airport/SFO" class="locname">San Francisco [Intl], CA, US</a></td>
+</tr>
+<tr valign=top>
+<td>OSA</td>
+<td>city</td>
+<td><a href="/airport/OSA" class="locname">Osaka, Honshu, JP</a></td>
+</tr>
+<tr valign=top>
+<td>SYD</td>
+<td>DAFIF</td>
+<td><a href="/airport/SYD" class="locname">Sydney [Kingsford Smith], NSW, AU</a></td>
+</tr>
+<tr valign=top>
+<td>YYZ</td>
+<td>DAFIF</td>
+<td><a href="/airport/YYZ" class="locname">Toronto [Lester B. Pearson Intl], ON, CA</a></td>
+</tr>
+<tr valign=top>
+<td>ATL</td>
+<td>FAA</td>
+<td><a href="/airport/ATL" class="locname">Atlanta [Hartsfield - Jackson Atlanta Intl], GA, US</a></td>
+</tr>
+<tr valign=top>
+<td>WAS</td>
+<td>city</td>
+<td><a href="/airport/WAS" class="locname">Washington [Metro Area], DC, US</a></td>
+</tr>
+<tr valign=top>
+<td>CMI</td>
+<td>FAA</td>
+<td><a href="/airport/CMI" class="locname">Champaign/Urbana [University of Illinois-Willard Airport], IL, US</a></td>
+</tr>
+</table>
+</div>
+
+<br>
+<span onclick="return sect_toggle(this,3);" class="knob" id="ctl"><span class="knob-img"><img src="/images/sect-hide.gif" width=12 height=12 border=0 alt="" id="ctl_knob">&nbsp;</span><span class="secthdr">Map Controls</span></span><br>
+<div class="sect-show" id="ctl_body"><script type="text/javascript"><!--
+sect_reload("ctl",3);
+// --></script>
+
+<form name="mapui" method="get" action="/mapui"
+ target="_top">
+<table cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td>
+<span onclick="return item_toggle(this,5);" class="knob" id="P"><span class="mapopt">Paths</span>&nbsp;<img src="/images/item-hide.gif" width=12 height=12 border=0 class="knob-img" alt="" id="P_knob"></span><br><div class="item-show" id="P_body"><script type="text/javascript"><!--
+item_reload("P",5);
+// --></script>
+
+<textarea name="P" cols=35 rows=6>SCL-LIM, LIM-MEX, LIM-BOG, MEX-LAX, MEX-CHI, MEX-MIA, MEX-BOG, BOG-MIA, BOG-SAO, BOG-BUE, BUE-SAO, SAO-MAD, SAO-LOS, LOS-KRT, LOS-FIH, FIH-KRT, FIH-JNB, JNB-KRT, KRT-CAI, CAI-ALG, CAI-IST, CAI-BGW, CAI-RUH, ALG-MAD, ALG-PAR, ALG-IST, MAD-NYC, MAD-LON, MAD-PAR, LON-NYC, LON-ESS, LON-PAR, PAR-ESS, PAR-MIL, MIL-ESS, MIL-IST, ESS-LED, LED-MOW, LED-IST, MOW-THR, MOW-IST, IST-BGW, BGW-THR, BGW-KHI, BGW-RUH, THR-DEL, THR-KHI, THR-RUH, RUH-KHI, KHI-DEL, KHI-BOM, DEL-CCU, DEL-MAA, DEL-BOM, BOM-MAA, MAA-CCU, MAA-BKK, MAA-JKT, CCU-HKG, CCU-BKK, BKK-HKG, BKK-SGN, BKK-JKT, HKG-SHA, HKG-TPE, HKG-MNL, HKG-SGN, SHA-PEK, SHA-ICN, SHA-TYO, SHA-TPE, PEK-ICN, ICN-TYO, TYO-SFO, TYO-OSA, OSA-TPE, TPE-MNL, MNL-SFO, MNL-SYD, MNL-SGN, SGN-JKT, JKT-SYD, SYD-LAX, LAX-SFO, LAX-CHI, SFO-CHI, CHI-YYZ, CHI-ATL, ATL-WAS, ATL-MIA, MIA-WAS, WAS-YYZ, WAS-NYC, NYC-YYZ, CMI-LAX, CMI-SFO, CMI-MEX, CMI-MIA, CMI-ATL, CMI-WAS, CMI-YYZ, CMI-NYC, CMI-CHI</textarea>
+</div>
+<br>
+<center><input type="submit" value="Draw Map" onclick="javascript:mapui_submit();"></center>
+<br>
+<span onclick="return item_toggle(this,6);" class="knob" id="R"><span class="mapopt">Ranges</span>&nbsp;<img src="/images/item-hide.gif" width=12 height=12 border=0 class="knob-img" alt="" id="R_knob"></span><br><div class="item-show" id="R_body"><script type="text/javascript"><!--
+item_reload("R",6);
+// --></script>
+
+<textarea name="R" cols=35 rows=6></textarea>
+</div>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td>
+<!-- **************** TABS **************** -->
+<!--[if IE]>
+<style type="text/css">
+UL#motabs SPAN { padding-bottom: 0.5em; }
+</style>
+<![EndIf]-->
+<div><ul id="motabs" class="dhide">
+<li><span id="mo1t" onclick="javascript:mapui_mo_pick(1);"><div><div></div></div>Markers</span>
+<li><span id="mo2t" onclick="javascript:mapui_mo_pick(2);"><div><div></div></div>Map Conf</span>
+<li><span id="mo3t" onclick="javascript:mapui_mo_pick(3);"><div><div></div></div>Dist+Time</span>
+<li><span id="mo4t" onclick="javascript:mapui_mo_pick(4);"><div><div></div></div>ETOPS</span>
+</ul>
+<div id="mobody">
+<div id="mo1">
+<table class="ctlbox" style="border:none;" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td colspan=3 nowrap><span class="mapopt2">Simple</span>
+<br>
+<select name="PM_q" onChange="javascript:mapui_quick_marker();">
+<option value="*">(default)
+<option value="-">(none)
+<option value='b:disc7'>disc
+<option value='b:disc7+%U'>disc + user-entered code
+<option value='b:disc7+%i'>disc + ICAO/best
+<option value='b:disc7+%t'>disc + IATA/best
+<option value='b:disc7+%N'>disc + city name
+<option value='b:disc7+%A'>disc + airport name
+<option value='b:disc7+"%N%, S%, C"'>disc + city, state, country
+<option value='b:disc7+"%U% (N"'>disc + user-entered code + city name
+<option value='b:disc7+"%i% (N"'>disc + ICAO/best + city name
+<option value='b:disc7+"%t% (N"'>disc + IATA/best + city name
+</select>
+</td>
+</tr>
+<script type="text/javascript"><!--
+document.writeln('<tr valign=top><td nowrap align=left><span onclick="return item_toggle(this,7);" class="knob" id="PM_det"><span class="mapopt2">Detailed</span>&nbsp;<img src="/images/item-show.gif" width=12 height=12 border=0 class="knob-img" alt="" id="PM_det_knob"></span><br><div class="item-hide" id="PM_det_body">');
+item_reload("PM_det",7);
+mapui_markers_html();
+document.writeln('</div></td>');
+// --></script>
+</tr>
+<tr valign=top>
+<td nowrap align=left><span onclick="return item_toggle(this,8);" class="knob" id="PM_raw"><span class="mapopt2">Raw</span>&nbsp;<img src="/images/item-show.gif" width=12 height=12 border=0 class="knob-img" alt="" id="PM_raw_knob"></span><br><div class="item-hide" id="PM_raw_body"><script type="text/javascript"><!--
+item_reload("PM_raw",8);
+// --></script>
+
+<input type="text" name="PM" size=45 value="*" onchange="javascript:mapui_init();">
+<script type="text/javascript"><!--
+mapui_init();
+// --></script>
+</div>
+</td>
+</tr></table>
+</div>
+<div id="mo2">
+<span class="mapopt">Map Options</span><div class="item-show">
+<table class="ctlbox" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Style</span>
+<br>
+<select name="MS">
+<option value="wls" selected>Plain
+<option value="wls2">Light
+<option value="bm">Blue Marble
+<option value="night">Night
+<option value="fb">Facebook
+</select>
+</td></tr>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Projection</span>
+<br>
+<select name="MP">
+<option value="" selected>Best: Rectangular or Polar
+<option value="r">Rectangular (Plate Carrée)
+<option value="p">Polar-Aspect Orthographic
+<option value="o">Orthographic
+<option value="a">Azimuthal Equidistant
+</select>
+</td></tr>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Center</span>
+<br>
+<input type="text" name="MC" size=24 value="">
+</td></tr>
+</table>
+</div>
+<br>
+<span class="mapopt">Path Options</span><div class="item-show">
+<table class="ctlbox" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Color</span>
+<br>
+<select name="PC">
+<option value="">(auto)
+<option value="red">red
+<option value="green">green
+<option value="blue">blue
+<option value="white">white
+<option value="black">black
+<option value="cyan">cyan
+<option value="magenta">magenta
+<option value="yellow">yellow
+<option value="orange">orange
+<option value="violet">violet
+<option value="navy">navy
+</select>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td nowrap><span class="mapopt2">Width</span>
+<br>
+<input type="text" name="PW" size=1 value="">
+</td>
+<td>&nbsp;&nbsp;</td>
+<td nowrap><span class="mapopt2">Type</span>
+<br>
+<select name="PT">
+<option value="">Geodesic
+</select>
+</td>
+</tr></table>
+</div>
+<br>
+<span class="mapopt">Range Options</span><div class="item-show">
+<table class="ctlbox" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Color</span>
+<br>
+<select name="RC">
+<option value="">(auto)
+<option value="red">red
+<option value="green">green
+<option value="blue">blue
+<option value="white">white
+<option value="black">black
+<option value="cyan">cyan
+<option value="magenta">magenta
+<option value="yellow">yellow
+<option value="orange">orange
+<option value="violet">violet
+<option value="navy">navy
+</select>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td nowrap><span class="mapopt2">Width</span>
+<br>
+<input type="text" name="RW" size=1 value="">
+</td>
+<td>&nbsp;&nbsp;</td>
+<td nowrap colspan=3><span class="mapopt2">Style</span>
+<br>
+<select name="RS">
+<option value="">(auto)
+<option value="outline">outline
+<option value="shaded">shaded
+</select>
+</td>
+</tr></table>
+</div>
+</div>
+<div id="mo3">
+<table class="ctlbox" style="border:none;" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Units</span>
+<br>
+<select name="DU">
+<option value="mi">statute miles
+<option value="nm">nautical miles
+<option value="km">kilometers
+<option value="m">meters
+<option value="ft">feet
+<option value="furlongs">furlongs
+</select>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td nowrap><span class="mapopt2">Minimum</span>
+<br>
+<input type="text" name="DM" size=4 value="">
+</td>
+</tr>
+<tr valign=top>
+<td colspan=3 nowrap><span class="mapopt2">Ground Speed or Mach</span>
+<br>
+<input type="text" name="SG" size=4 value="">
+&nbsp;
+<select name="SU">
+<option value="mph">miles/hour
+<option value="kts">knots
+<option value="kph">km/hour
+<option value="fps">feet/second
+<option value="mach">Mach
+</select>
+</td>
+</tr></table>
+</div>
+<div id="mo4">
+<table class="ctlbox" style="border:none;" cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td nowrap><span class="mapopt2">Rule Times</span>
+<br><input type="checkbox" name="E" value="60">&nbsp;60 minutes
+<br><input type="checkbox" name="E" value="75">&nbsp;75 minutes
+<br><input type="checkbox" name="E" value="90">&nbsp;90 minutes
+<br><input type="checkbox" name="E" value="120">&nbsp;120 minutes
+<br><input type="checkbox" name="E" value="138">&nbsp;138 minutes
+<br><input type="checkbox" name="E" value="180">&nbsp;180 minutes
+<br><input type="checkbox" name="E" value="207">&nbsp;207 minutes
+<br><input type="checkbox" name="E" value="240">&nbsp;240 minutes
+<br><input type="checkbox" name="E" value="330">&nbsp;330 minutes
+</td>
+<td nowrap>&nbsp;&nbsp;</td>
+<td nowrap><span class="mapopt2">Engine-Out Speed</span>
+<br>
+<input type="text" name="EV" size=4 value="">
+&nbsp;
+<select name="EU">
+<option value="kts">knots
+<option value="mph">miles/hour
+<option value="kph">km/hour
+</select>
+<script type="text/javascript"><!--
+mapui_evu_html();
+// --></script>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div style="clear:both;"></div>
+<script type="text/javascript"><!--
+mapui_mo_init();
+// --></script>
+</td>
+</tr></table>
+</form>
+</div>
+
+<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- gc2-mapui-footer -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4595747994911043"
+     data-ad-slot="6541252786"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+<div class="hack">&nbsp;</div>
+</div><div id="end">
+<table cellspacing=0 cellpadding=0 border=0 class="end-text"><tr valign=top>
+<td width="99%">
+<p>
+<div class="end-legal">Information on this site may not be accurate or current
+and is not valid for flight planning or navigation.
+No warranty of fitness for any purpose is made or implied.
+Flight planning and navigation should only be done using official charts.</div>
+<p>
+Copyright&nbsp;&#169;&nbsp;1996-2014
+<a href="http://www.kls2.com/~karl/">Karl L. Swartz</a>.
+All rights reserved.
+<br>The Great Circle Mapper name and logo are trademarks of the <a href="/">Great Circle Mapper</a>.
+<br>All other trademarks mentioned herein belong to their respective owners.
+<br>Please see <a href="/credits">credits</a> for attibutions and further copyright information.
+</td>
+<td width=16 nowrap> &nbsp; </td>
+<td align=left width="1%" class="end-badges"><a href="http://www.facebook.com/gcmap"><img src="/images/fb-32.png" width=32 height=32 border=0 alt="Follow gcmap on Facebook"></a>&nbsp;<a href="http://www.twitter.com/gcmap"><img src="/images/twitter-32.png" width=32 height=32 border=0 alt="Follow gcmap on Twitter"></a>
+</td>
+</tr></table>
+</div></div></body></html>

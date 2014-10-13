@@ -1,8 +1,12 @@
 import json
 import sys
+import urllib.request
+
+from PIL import Image
+
 from Node import Node
 from Edge import Edge
-import webbrowser
+
 
 class Graph:
 
@@ -377,7 +381,10 @@ class Graph:
             elif len(self.nodes[i].adjacent_cities) > curr:
                 hubs = [self.nodes[i].name]
             i += 1
-        return hubs
+        ret = ""
+        for hub in hubs:
+            ret += (hub)
+        return str(ret)
 
     #finds the average population of all cities
     #return - avg population
@@ -466,7 +473,12 @@ class Graph:
                 url.append(item)
                 i+=2
         url = "".join(url)
-        webbrowser.open("http://www.gcmap.com/mapui?P="+url)
+        img = urllib.request.urlopen("http://www.gcmap.com/mapui?P="+url)
+        file = open('map.gif', 'wb')
+        file.write(img.read())
+        file.close()
+
+        #webbrowser.open("http://www.gcmap.com/mapui?P="+url)
 
     #calculates cost of trip and time trip will take, then prints values
     #param city_list - list of cities in route
@@ -687,7 +699,6 @@ class Graph:
             if code == node.code:
                 return node
 
-paths = ['C:/Users/Anne/PycharmProjects/Assignment2/map_data.json','C:/Users/Anne/PycharmProjects/Assignment2/cmi_hub.json']
-x = Graph(paths)
+
 #x.create_map_URL()
-x.user_input()
+#x.user_input()
