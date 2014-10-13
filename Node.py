@@ -4,9 +4,6 @@ class Node:
     #param metro - JSON city data
     #param edges - edges associated with Graph
     def __init__(self, metro, edges):
-        self.previous = None
-        self.visited = False
-        self.distance = 0
         self.code = metro['code']
         self.name = metro['name']
         self.country = metro['country']
@@ -35,5 +32,5 @@ class Node:
         i = 0
         for Edge in edges:
             if edges[i].home == self.code:
-                self.adjacent_cities.append({edges[i].dest : edges[i].distance})
+                self.adjacent_cities.append([edges[i].dest, edges[i].distance])
             i+=1
