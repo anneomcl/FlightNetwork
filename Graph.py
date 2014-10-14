@@ -227,6 +227,17 @@ class Graph:
         new_node = Node(entry["metros"], self.edges)
         self.nodes.append(new_node)
 
+    def make_new_city_GUI(self, new_name, new_city, new_country, new_continent, new_timezone,
+                          new_lat, new_lat_degree, new_long, new_long_degree, new_population,
+                          new_region):
+        entry = dict()
+        entry["metros"] = {'code' : new_city, 'name' : new_name, 'country' : new_country,
+                             'continent' : new_continent, 'timezone' : new_timezone,
+                             'coordinates' : {new_lat : new_lat_degree, new_long : new_long_degree},
+                             'population' : new_population, 'region' : new_region}
+        new_node = Node(entry["metros"], self.edges)
+        self.nodes.append(new_node)
+
     #prompts user to create new route
     def make_new_route(self):
         while(1):
@@ -243,6 +254,18 @@ class Graph:
                 if(self.nodes[i].code == home):
                     self.nodes[i].adjacent_cities.append({dest : dist})
                 i+=1
+
+    def make_new_route_GUI(self, home, dest, dist):
+        entry = dict()
+        entry["ports"] = [home, dest]
+        entry["distance"] = dist
+        new_edge = Edge(entry)
+        self.edges.append(new_edge)
+        i=0
+        for Node in self.nodes:
+            if(self.nodes[i].code == home):
+                self.nodes[i].adjacent_cities.append({dest : dist})
+            i+=1
 
     #saves edited data to new JSON file called map_data_edit.json
     def save_to_disk(self):
@@ -489,7 +512,15 @@ class Graph:
         cost = self.get_flight_cost(d)
         time = self.get_route_time(d, city_list)
         print("Cost of trip: ", cost)
-        print("Time trip will take: ", time, " hours")
+        print("Time trip will take: ",time, " hours")
+
+    def get_route_info_GUI(self, city_list):
+        city_list = self.turn_codes_into_nodes(city_list)
+        d = self.get_route_distance(city_list)
+        cost = self.get_flight_cost(d)
+        time = self.get_route_time(d, city_list)
+        ret = [cost, time]
+        return ret
 
 
     #turns a list of city codes into a list of their respective nodes
@@ -636,6 +667,7 @@ class Graph:
     #finds the shortest path between two cities
     #param home - starting node
     #param dest - destination node
+    #param city_list - a list of city codes
     def find_shortest_path(self, home, dest, city_list):
 
         self.turn_codes_into_nodes(city_list)
@@ -699,6 +731,7 @@ class Graph:
             if code == node.code:
                 return node
 
-
+#paths = ['C:/Users/Anne/PycharmProjects/Assignment2/map_data.json','C:/Users/Anne/PycharmProjects/Assignment2/cmi_hub.json']
+#x = Graph(paths)
 #x.create_map_URL()
 #x.user_input()
